@@ -5,16 +5,13 @@
       </h2>
       <div class="text-2xl mt-4 mb-10">
           {{ dataDate }}
-      </div>
+      </div>    
   </div>
 </template>
 
 <script>
 export default {
-
+    name: 'DataTitle',
+    props: ['text', 'dataDate'],
 }
 </script>
-
-<style>
-
-</style>
