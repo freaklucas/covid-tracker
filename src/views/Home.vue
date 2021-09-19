@@ -1,4 +1,7 @@
-<template>
+<template> 
+    <h2 class="font-mono font-bold mt-4 p-8 pl-12 text-4xl flex text-center ml-12 mx-12 mb-8">
+        Pesquise dados atuais de covid-19 em todos os países
+    </h2>
   <main v-if="!loading">
       <DataTitle  :text="title" :dataDate="dataDate" />
       <DataBoxes :stats="stats"/>
@@ -8,7 +11,7 @@
           @click="clearCountryData"
           class="
             bg-green-700 text-white rounded-full p-3
-            mt-10 focus:outline-none hover:bg-green-800
+            mt-10 focus:outline-none hover:bg-red-800
             font-poppins text-lg
             "
         >
