@@ -18,7 +18,7 @@
                 Falecimentos
             </h3>
             <div class="text-2xl mb-4">
-                <span class="font-bold">Novas:</span>
+                <span class="font-bold">Novo:</span>
                 {{ stats.NewDeaths }}
             </div>
             <div class="text-2xl mb-4">

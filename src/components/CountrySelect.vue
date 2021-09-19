@@ -3,7 +3,7 @@
         <select  
             @change="onChange()" 
             v-model="selected" 
-            class="text-xl font-poppins p-2"
+            class=" mt-8 text-2xl font-poppins p-2 bg-gray-200"
         >
             <option velue="0" 
             class="
@@ -36,9 +36,8 @@
                 const country = this.countries.find((item) => item.ID === this.selected)
                 console.log(country)
 
-                this.$emit('get-country')
+                this.$emit('get-country', country)
                 }
         }
-        
     }
 </script>
