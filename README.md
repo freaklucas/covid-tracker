@@ -1,5 +1,20 @@
 # covid
 
+<p align="center">
+ 
+</p>
+
+<h1 align="center">
+    <img src=".github/1.png" />
+    <img src=".github/2.png" />
+    <img src=".github/3.png" />
+    <img src=".github/4.png" />
+    <img src=".github/5.png" />
+
+</h1>
+
+<br>
+
 ## Project setup
 ```
 npm install
