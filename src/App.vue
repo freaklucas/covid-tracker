@@ -2,19 +2,16 @@
   <Header />
   <div class="container mx-auto ">
     <router-view />
-    <Home />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Home from '@/views/Home.vue'
+import Header from '@/components/Header.vue';
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Home
+    Header
   }
 }
 </script>

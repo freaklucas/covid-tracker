@@ -10,15 +10,18 @@
 </template>
 
 <script>
-import moment from 'moment';
+import dayjs from 'dayjs';
+import { computed } from 'vue';
 
 export default {
     name: 'DataTitle',
     props: ['text', 'dataDate'],
-    computed: {
-        timestamp: function () {
-            return moment(this.dataDate).format('YYYY-MM-DD, h:mm:ss a');
-        }
+    
+    setup({dataDate}) {
+        return {
+            timestamp: computed(() => dayjs(dataDate)
+            .format('MMMM D YYYY, h:mm:ss a'))
+        };
     }
-}
+};
 </script>
