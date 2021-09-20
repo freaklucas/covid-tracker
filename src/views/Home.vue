@@ -3,7 +3,7 @@
         Pesquise dados atuais de covid-19 em todos os países
     </h2>
     <main v-if="!loading">
-        <DataTitle  :text="title" :dataDate="dataDate" />
+        <DataTitle  :text="title" :dataDate="dataDate" class="font-bold" />
         <DataBoxes :stats="status" />
         <CountrySelect @get-country="getCountryData" :countries="countries" />
         <button

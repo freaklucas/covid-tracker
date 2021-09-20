@@ -1,6 +1,5 @@
 <template>
   <div class="grid md:grid-cols-2 gap-4">
-    <!-- Box 1 -->
     <div class="shadow-md bg-blue-100 p-10 text-center rounded hover:bg-green-200">
       <h3 class="text-3xl text-blue-900 font-bold mb-4">Casos</h3>
 
@@ -12,9 +11,12 @@
         <span class="font-bold">Total:</span>
         {{ numberWithCommas(stats.TotalConfirmed) }}
       </div>
-    </div>
+      <div class="text-2xl mb-4">
+        <span class="font-bold">Total Recuperados:</span>
+        {{ numberWithCommas(stats.TotalRecovered) }}
+      </div>
 
-    <!-- Box 2 -->
+    </div>
     <div class="shadow-md bg-blue-200 p-10 text-center rounded hover:bg-green-200">
       <h3 class="text-3xl text-blue-900 font-bold mb-4">Óbitos</h3>
 
@@ -25,7 +27,7 @@
       <div class="text-2xl mb-4">
         <span class="font-bold">Total:</span>
         {{ numberWithCommas(stats.TotalDeaths) }}
-      </div>
+      </div>      
     </div>
   </div>
 </template>
