@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 import dayjs from 'dayjs';
 import { computed } from 'vue';
 
@@ -20,7 +21,7 @@ export default {
     setup({dataDate}) {
         return {
             timestamp: computed(() => dayjs(dataDate)
-            .format('MMMM D YYYY, h:mm:ss a'))
+            .format('YYYY-MM-DD HH:mm:ss'))
         };
     }
 };
